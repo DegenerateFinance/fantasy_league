@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-        player.cpp
+        player.cpp \
+        user.cpp
 
 HEADERS += \
-    player.hpp
+    player.hpp \
+    user.hpp

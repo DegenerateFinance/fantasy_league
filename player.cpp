@@ -10,6 +10,36 @@ player::player(float price, int score)
     this->score=score;
 }
 
+string player::getName() const
+{
+    return name;
+}
+
+unsigned player::getId() const
+{
+    return id;
+}
+
+int player::getPosition() const
+{
+    return position;
+}
+
+void player::setPosition(int value)
+{
+    position = value;
+}
+
+bool player::getHealthState() const
+{
+    return healthState;
+}
+
+void player::setHealthState(bool value)
+{
+    healthState = value;
+}
+
 int player::getScore() const
 {
     return score;
