@@ -1,22 +1,18 @@
 #ifndef USER_HPP
 #define USER_HPP
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "publicuserdata.hpp"
+#include "privateuserdata.hpp"
 
-#include "team.hpp"
-class user
+class user: public publicUserData, public privateUserData
 {
 public:
     user();
 //protected:
     user(string, string, string, float);
+
 //private:
-    string id;
-    string username;
-    string password;
-    team* userTeam;
-    float liquidCash;
+
+
 };
 
 #endif // USER_HPP
