@@ -11,7 +11,7 @@ public:
 
 //protected:
 
-    player(float, int);
+    player(string, unsigned, int, bool, float);
 //private:
     string name;
     string getName() const;

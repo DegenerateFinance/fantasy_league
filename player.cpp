@@ -4,10 +4,14 @@ player::player()
 {
 
 }
-player::player(float price, int score)
+player::player(string name, unsigned id, int position, bool healthState, float price)
 {
+    this->name=name;
+    this->id=id;
+    this->position=position;
+    this->healthState=healthState;
     this->price=price;
-    this->score=score;
+    this->score=0;
 }
 
 string player::getName() const
