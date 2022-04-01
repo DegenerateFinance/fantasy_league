@@ -1,12 +1,15 @@
 #ifndef MANAGER_HPP
 #define MANAGER_HPP
+
+#include <fstream>
 #include "user.hpp"
 
 class manager
 {
 public:
     manager();
-
+    manager(int);
+    ~manager();
 //protected:
 
 //private:

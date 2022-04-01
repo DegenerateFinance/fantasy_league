@@ -1,2 +1,3 @@
 # fantasy_league
-The goal of this project is to make a c++ application for a basketball fantasy league manager. 
+Iḿ trying to buid a gui with qt, this can go south in any moment
+
