@@ -7,6 +7,10 @@
 #include "admin.hpp"
 #include "manager.hpp"
 
+#include <fstream>
+#include <iostream>
+#include <string>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -14,12 +18,20 @@ int main(int argc, char *argv[])
     loginPage.show();
     manager notMe;
 
-    fstream testFile;
-    testFile.open("aaa.txt", ios::out);
+    fstream testFile("/home/rchone/Documents/progra/fantasy_league/fantasy_gui/textfile.txt", ios::in | ios::out);
+    if (!testFile)
+    {
+        cerr<<"Error opening file"<<endl;
+    }
+
     if (testFile.is_open())
     {
         cout<<"open success\n";
         testFile << "Holly fak it worked !";
+        string sOut;
+        getline(testFile, sOut);
+
+        cout<< sOut<<endl;
         testFile.close();
     }
     else
