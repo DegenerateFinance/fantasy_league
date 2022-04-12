@@ -19,7 +19,7 @@ public:
     string getUsername() const;
     void setUsername(const string &value);
 
-    team* userTeam;
+    team* myTeam;
     team *getUserTeam() const;
     void setUserTeam(team *value);
 };

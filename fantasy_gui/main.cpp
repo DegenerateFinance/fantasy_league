@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     loginPage.show();
     manager notMe;
 
-    fstream testFile("/home/rchone/Documents/progra/fantasy_league/fantasy_gui/textfile.txt", ios::in | ios::out);
+    fstream testFile("textfile.txt", ios::in | ios::out);
     if (!testFile)
     {
         cerr<<"Error opening file"<<endl;
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     if (testFile.is_open())
     {
         cout<<"open success\n";
-        testFile << "Holly fak it worked !";
+        testFile << "Say something !!!";
         string sOut;
         getline(testFile, sOut);
 
