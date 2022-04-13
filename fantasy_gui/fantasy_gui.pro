@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     admin.cpp \
+    functions.cpp \
     main.cpp \
     mainwindow.cpp \
     manager.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     admin.hpp \
+    functions.hpp \
     mainwindow.hpp \
     manager.hpp \
     player.hpp \

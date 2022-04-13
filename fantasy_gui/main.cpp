@@ -18,25 +18,21 @@ int main(int argc, char *argv[])
     loginPage.show();
     manager notMe;
 
-    fstream testFile("textfile.txt", ios::in | ios::out);
-    if (!testFile)
+    fstream playersTXT("textfiles/players.txt", ios::in | ios::out);
+    if (!playersTXT)
     {
         cerr<<"Error opening file"<<endl;
     }
 
-    if (testFile.is_open())
+    if (playersTXT.is_open())
     {
         cout<<"open success\n";
-        testFile << "Say something !!!";
+        playersTXT << "Say something !!!";
         string sOut;
-        getline(testFile, sOut);
+        getline(playersTXT, sOut);
 
         cout<< sOut<<endl;
-        testFile.close();
-    }
-    else
-    {
-        cout<<"not open\n";
+        playersTXT.close();
     }
 
     std::cout<<"run in terminal"<<std::endl;

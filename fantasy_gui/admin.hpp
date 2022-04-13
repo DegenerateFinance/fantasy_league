@@ -7,14 +7,15 @@ using namespace std;
 class admin
 {
 public:
-    admin();
-//protected:
 
+//protected:
+    admin(string, string);
 
 //private:
     string id;
+    string username;
     string password;
-
+    admin();
 };
 
 #endif // ADMIN_HPP

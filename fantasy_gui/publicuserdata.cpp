@@ -7,12 +7,12 @@ publicUserData::publicUserData()
 
 team *publicUserData::getUserTeam() const
 {
-    return userTeam;
+    return myTeam;
 }
 
 void publicUserData::setUserTeam(team *value)
 {
-    userTeam = value;
+    myTeam = value;
 }
 
 string publicUserData::getUsername() const
