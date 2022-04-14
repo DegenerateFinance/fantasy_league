@@ -6,6 +6,7 @@
 #include "user.hpp"
 #include "admin.hpp"
 #include "manager.hpp"
+#include "functions.hpp"
 
 #include <fstream>
 #include <iostream>
@@ -18,24 +19,10 @@ int main(int argc, char *argv[])
     loginPage.show();
     manager notMe;
 
-    fstream playersTXT("textfiles/players.txt", ios::in | ios::out);
-    if (!playersTXT)
-    {
-        cerr<<"Error opening file"<<endl;
-    }
 
-    if (playersTXT.is_open())
-    {
-        cout<<"open success\n";
-        playersTXT << "Say something !!!";
-        string sOut;
-        getline(playersTXT, sOut);
+    notMe.addAdmin("testaAdminUser","SAFUAdminPW");
 
-        cout<< sOut<<endl;
-        playersTXT.close();
-    }
-
-    std::cout<<"run in terminal"<<std::endl;
+    notMe.addAdmin("Second Admin", "Very Safe");
 
 
     return a.exec();

@@ -5,5 +5,4 @@
 #include "manager.hpp"
 
 void exportAdmins(vector<admin*>);
-
 #endif // FUNCTIONS_HPP
