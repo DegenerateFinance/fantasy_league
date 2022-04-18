@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
     loginPage.show();
     manager notMe;
 
-
     notMe.addAdmin("testaAdminUser","SAFUAdminPW");
 
     notMe.addAdmin("Second Admin", "Very Safe");

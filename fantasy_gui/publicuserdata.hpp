@@ -2,7 +2,6 @@
 #define PUBLICUSERDATA_HPP
 #include "team.hpp"
 
-
 class publicUserData
 {
 public:

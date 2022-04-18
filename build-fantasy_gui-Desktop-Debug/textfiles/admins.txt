@@ -1,9 +1,6 @@
-11
-22
-
 testaAdminUser
 SAFUAdminPW
-
+
 Second Admin
 Very Safe
-
+

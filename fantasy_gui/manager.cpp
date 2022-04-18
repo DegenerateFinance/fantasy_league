@@ -56,6 +56,20 @@ void manager::importAdmins()
 {
     fstream adminsTXT("textfiles/admins.txt", ios::in | ios::out);
     string line;
+    getline(adminsTXT, line);
+    cout<<"Line1"<<line<<endl;
+    getline(adminsTXT, line);
+    cout<<"line2"<<line<<endl;
+    getline(adminsTXT, line);
+    cout<<"line3"<<line<<endl;
+
+    if (line.compare("\n")==0)
+    {
+        cout<<"wiiii"<<endl;
+    }
+    getline(adminsTXT, line);
+    cout<<"line4"<<line<<endl;
+
 //    while(line!="\n")
 //    {
 //        cout<<"importing admins"<<endl;

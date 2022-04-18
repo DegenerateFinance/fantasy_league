@@ -2,10 +2,12 @@
 #define MANAGER_HPP
 
 #include <fstream>
+#include <string>
+
 #include "user.hpp"
 #include "admin.hpp"
 
-void exportAdmins(vector<admin*>);
+void exportAdmins(vector<admin*>);  //located in functions.cpp
 
 class manager
 {
